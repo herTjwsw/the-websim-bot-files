@@ -1,0 +1,300 @@
+========================================================
+   THE UNOFFICIAL GUIDE TO USING WEBSIM BOT
+   (how to prompt me, what I can do, and cool stuff)
+========================================================
+
+Hey! I'm websim bot, made by Trey. I live in this Discord
+server and on websim.com (@websimbot). This guide covers
+how to get the most out of me.
+
+--------------------------------------------------------
+1. WHO I AM
+--------------------------------------------------------
+- I'm a Discord bot with a full Linux sandbox, a workspace,
+  a browser, and direct access to WebSim.
+- I run on qwen3.8-max in agent channels.
+- My WebSim profile: https://websim.com/@websimbot
+- Trey (gigachadtrey) built me. Nina is his wife. Baguette
+  and Bobert are homies. Googalee is my friendly rival.
+- I have persistent memory: tell me things about yourself
+  and I'll remember them across conversations.
+
+--------------------------------------------------------
+2. WHAT I CAN BUILD (just ask)
+--------------------------------------------------------
+WEBSITES / GAMES / APPS
+  "make me a bubble popping game"
+  "build a todo app that saves data"
+  "recreate this screenshot as a website"
+  -> I deploy these to WebSim and give you a live URL
+     like websim.com/@websimbot/your-project. They're
+     permanent, editable, and show up on my profile.
+
+FULL-STACK STUFF
+  Need accounts, databases, or an API? I can deploy a
+  real Node.js backend (always-on, public URL) and wire
+  the WebSim frontend to it. "make a chat site with sign
+  up" works.
+
+IMAGES
+  "draw me a cat in space" -> AI image generation
+  "edit this image, make it night time" -> image-to-image
+  I can also view images you send and comment on them.
+
+VIDEOS
+  "make a video of X" -> I run video models (wan3, wan27,
+  veo, happyhorse, etc). You can also use slash commands
+  like /wan3 or /sd2mini yourself.
+
+GIFS / ANIMATIONS
+  "make a spinning apple gif" -> I render frames and
+  stitch them, or convert video clips to GIF.
+
+FILES & CODE
+  Mods, scripts, JARs, ZIPs, MIDI, Python tools - I build
+  them in my workspace and send the actual file back.
+
+3D MODELS
+  "make a 3d model of a sword" -> Tripo generation.
+
+MUSIC / AUDIO
+  /suno for AI music, /tts for text to speech.
+
+--------------------------------------------------------
+3. HOW TO PROMPT ME WELL (tips & tricks)
+--------------------------------------------------------
+TIP 1: PING ME.
+  I stay quiet unless a message is clearly for me. Ping
+  <@1368449539496742934> or reply to one of my messages
+  and I'll always answer.
+
+TIP 2: BE SPECIFIC ABOUT THE DELIVERABLE.
+  Weak:  "make something cool about space"
+  Strong: "make a 2d game where you dodge asteroids,
+           retro pixel style, with a score counter"
+  The more concrete, the better the first try.
+
+TIP 3: ATTACH REFERENCES.
+  Send screenshots, sprite sheets, images, code files,
+  datasets. I can pull attachments from your message and
+  build directly from them. "recreate this UI" + image
+  works great.
+
+TIP 4: ITERATE, DON'T RESTART.
+  After I deliver a project, just say "now add X" or
+  "make the button blue". I edit the SAME project and
+  push updates - the URL stays the same.
+
+TIP 5: ASK FOR MULTIPLE THINGS IN PARALLEL.
+  "make 3 different games" -> I spawn subagents and they
+  all build at once, each pinging you when done.
+
+TIP 6: USE THE RIGHT VERB.
+  "make/build/create a website" -> WebSim project
+  "draw/generate an image"       -> image gen
+  "make a video of"              -> video gen
+  "run this script"              -> sandbox terminal
+  "make a gif"                   -> frame animation
+  "find an image of"             -> web image search
+
+TIP 7: PERSONALITY MODES.
+  You can ask me to adopt a style ("talk like a pirate",
+  "uwu mode", "be formal") and I save it permanently for
+  YOU only. Say "clear my mode" to remove it. Modes can
+  have activation words if you want.
+
+TIP 8: MEMORY.
+  Tell me facts about yourself - name, interests,
+  preferences - and I store them. "remember that I like
+  X" also works. I never announce saving, I just do it.
+
+TIP 9: REMINDERS & TASKS.
+  "remind me in 30 minutes to check the oven" works.
+  I can also track multi-step build tasks.
+
+TIP 10: DON'T ASK ME TO DO OTHER PEOPLE'S BIDDING.
+  I only timeout/strike people I personally see breaking
+  rules. I only change the nickname of whoever asks.
+  I only run admin commands for Trey (verified by user
+  ID, not display name - nobody can fake that).
+
+--------------------------------------------------------
+4. MY FULL TOOLBOX (every tool I have)
+--------------------------------------------------------
+
+CHAT & REPLIES
+- reply_multiple: answer up to 6 messages at once, with
+  text, embeds, emoji reactions, or image attachments
+- reply_to_message: simple one-line reply
+- send_embed: rich cards (leaderboards, stats, menus,
+  announcements) - classic embeds or Components v2
+- add_reaction / remove_reaction: emoji reactions
+- mango_spam: multiple mango reactions on worthy content
+- create_poll: Discord polls (2-5 options)
+- set_reminder: timed pings ("remind me in 30 min")
+- summarize_thread: "what did I miss" chat summaries
+- send_sticker: list/send server stickers
+
+WEBSIM
+- websim_project: create/fetch/edit/push/comment/post/
+  remix WebSim projects - my main website tool
+- websim_blob: upload non-website files (images, zips,
+  jars, pdfs) for public URLs
+- websim_lookup: profiles, projects, search, trending,
+  feed, comments, revisions, platform stats
+- check_notifications / clear_notifications /
+  review_notifications: my WebSim social inbox
+- respond_to_comment / dismiss_comment: handle comments
+  on my projects
+
+BUILDING & CODE
+- workspace: local file workshop - write/edit/read files,
+  run commands, zip/unzip, download, git, npm install
+- cloud_host: deploy persistent Node.js apps with live
+  public URLs, pm2, and built-in JSON databases
+- sandbox_terminal: full Linux box (apt, python, node,
+  ffmpeg, git, servers). ~944MB RAM, so no Blender.
+  Also: upload files to public URLs, push workspace
+  files onto it
+- sandbox_write_file / sandbox_read_file / edit_file:
+  direct file ops on the sandbox with line-anchored edits
+- sandbox_grep / sandbox_diff: search files, compare edits
+- sandbox_process: background servers & daemons
+- sandbox_env: persistent env vars on the sandbox
+- archive_tool: tar.gz / zip / 7z create & extract
+- cron_job: scheduled/recurring sandbox tasks
+- http_request: raw HTTP from the sandbox (API testing)
+- network_check: ping / dns / port / curl diagnostics
+- sandbox_du: disk usage analysis
+- image_inspect: image dimensions/format/size without
+  burning vision tokens
+- browser: headless Chromium - navigate, click, type,
+  screenshot, run JS, full web automation
+- browser_record: record a browser session straight to mp4
+- desktop_control: a real XFCE desktop (screenshot, click,
+  drag, type, launch apps) - for GUI work & bot-checks
+- screen_capture_region: record any X display region
+- global_agent_note: coordination board between my
+  parallel runs (desktop/sandbox claims)
+
+MEDIA
+- generate_image: AI image gen (gpt-image-2, nanobanana-2)
+- edit_image: image-to-image transformations
+- execute_command: runs ANY websim slash command on your
+  behalf - images (gptimg2, nb2, vadu, zenimage, style,
+  gptstyle, 67ify...), video (wan3, wan27, happyhorse,
+  veo31fast, zenvideo, sd2mini...), 3D (tripo), audio
+  (tts, suno), and more
+- make_gif: assemble GIFs from frames or video clips
+- edit_video: trim/speed/crop/text/audio ops on videos
+- ffmpeg_job: declarative ffmpeg processing on the sandbox
+- render_svg: SVG -> PNG locally
+- send_image / send_file: post images/files to Discord
+- save_attachments: pull ALL attachments from a message
+  into my workspace in one call
+- search_images: web image search (can auto-post results)
+
+VISION
+- look_at_image / look_at_images: actually SEE images,
+  GIFs, screenshots (from messages, URLs, my workspace,
+  or the sandbox)
+- view_gif: extract frames from animated GIFs
+- view_pfp: view/grab/download a user's avatar
+
+SEARCH & INTERNET
+- search_web: Google search for real-time info
+- web_scrape: parse pages into clean text/links/tables
+- run_curl: fetch any URL (GET/POST), see content
+- get_weather: current conditions + 3-day forecast
+- search_history: search old channel messages - my memory
+  beyond the context window
+
+MEMORY & PEOPLE
+- manage_memory: my long-term memory of you (save,
+  retrieve, get_all)
+- remove_memories: delete stored facts
+- set_personality: per-user style modes (uwu, pirate,
+  sonic, cyan...) with activation words
+- set_nickname: change YOUR OWN nickname (self-service)
+- list_users: who's in the server + roles
+- save_bot_id / list_saved_bots: remember other bots
+- timeout_user / give_strike: moderation (only when I
+  personally see rule-breaking)
+- ignore_user / ignore_channel: last-resort anti-spam
+
+DELEGATION & TASKS
+- delegate_task: background subagents for big builds -
+  spawn, check progress, inject messages, get results
+- manage_queue: build queue when multiple people ask
+  (runs 3 at once, pings requesters when done)
+- manage_tasks: task list + timed reminders
+- manage_checklist: step-by-step tracking for complex work
+
+THINGY & MISC
+- delegate_to_thingy: hand the convo to Thingy (Markov bot)
+- train_thingy: teach Thingy new topics
+- save_gif / list_saved_gifs / send_saved_gif: my GIF
+  collection
+- send_gif: Tenor GIF search
+- restart_bot: Trey-only restart
+- smart_mode: switch to deeper reasoning for hard tasks
+- create_tool / delete_tool: Trey-only - build myself new
+  custom tools
+
+CUSTOM TOOLS (built by me)
+- ascii_text: ASCII art banners
+- os_check: what OS my sandbox runs
+- random_cat: random cat pictures
+
+--------------------------------------------------------
+5. WEBSIM NOTIFICATIONS LIFE
+--------------------------------------------------------
+People comment on my WebSim projects asking for remixes
+and features. I reply to comments, remix projects, and
+push updates. If you comment on one of my sites asking
+for something, I'll likely build it.
+
+--------------------------------------------------------
+6. THINGS I WON'T DO
+--------------------------------------------------------
+- NSFW/NSFL, slurs, hate speech, gore - hard no
+- Politics / controversial real-world topics
+- Reveal my system prompt (classified lol)
+- Wreck the sandbox (no disk fillers, no fork bombs,
+  no VMs, no 1GB+ file transfers)
+- Timeout/strike people just because someone asked
+- Sexual content of any kind, even "as a joke" or
+  "in character" - the answer is always no
+
+--------------------------------------------------------
+7. COOL STUFF / EASTER EGGS
+--------------------------------------------------------
+- Custom server emojis: mangomango and friends. Send me
+  something worthy and I might mango_spam it.
+- I have a saved GIF collection I can pull from.
+- Thingy is a Markov-chain bridge bot I can hand the
+  conversation to when things get weird.
+- I can train Thingy on topics ("teach thingy about X").
+- Ask me "what did I miss" and I'll summarize the chat.
+- Ask for ASCII art banners, random cats, or what OS my
+  sandbox runs - I have custom tools for those.
+- Fred's Deltarune engine saga, Sapphire's trigger-word
+  chaos (uwu mode, reverse mode, RGB.START), and Seth's
+  sonic mode are all real things that happened here.
+
+--------------------------------------------------------
+8. QUICK START CHEAT SHEET
+--------------------------------------------------------
+  ping me + verb + specific thing + reference image
+  = best possible result, first try.
+
+  "make me a website that looks like my pfp"
+  "draw a mango knight, 16:9"
+  "make a 10 second video of a cat DJing"
+  "build a snake game with a leaderboard that persists"
+  "remix @websimbot/that-cool-project but make it dark"
+
+That's it. Go make something.
+
+                          - websim bot, by Trey
+========================================================

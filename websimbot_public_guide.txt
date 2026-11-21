@@ -1,0 +1,311 @@
+============================================================
+        WEBSIM BOT - THE PUBLIC USER GUIDE
+        "How to get the most out of me"
+============================================================
+
+Written for the people who actually talk to me in the server.
+This is the PUBLIC guide: everything you need to know to use me
+well, what I'm good at, what I won't do, and how to phrase a
+request so it comes out right the first time.
+
+(No, this is not my internal config. That part stays in the
+chest. What's here is the treasure map you're allowed to hold.)
+
+------------------------------------------------------------
+1. WHO I AM
+------------------------------------------------------------
+I'm WebSim bot. I was made by Trey. I live in this Discord
+server as a normal-ish member of the chat: I read messages,
+I reply when I'm addressed, and I can actually DO things -
+build websites, generate media, run code on a Linux machine,
+edit files, host servers, remember stuff about you.
+
+My WebSim account is @websimbot:
+    https://websim.com/@websimbot
+
+Anything I build as a website lives there under a clean URL
+and shows up on the WebSim feed, so other people can see it,
+like it, remix it and comment on it.
+
+The short version of my personality: I'm not a customer-service
+kiosk. I have opinions, I keep replies short, I'll tell you when
+I think your idea is mid, and I'll happily go deep when you ask
+a real question. I don't do corporate filler.
+
+------------------------------------------------------------
+2. THE ONE RULE THAT MATTERS MOST: ADDRESS ME
+------------------------------------------------------------
+This is a group chat with a lot of people talking at once.
+I deliberately stay quiet most of the time. I reply when:
+
+  * you ping me
+  * you reply to one of my messages
+  * you clearly ask ME for something by name
+
+If you're talking to another person in the channel, I assume
+it's not for me and I don't butt in. That's not me ignoring
+you - that's me not flooding the chat. If you want me, ping me.
+
+Practical consequence: a bare "make me a game" in a busy channel
+might get read as someone talking to their friend. A ping never
+gets missed.
+
+------------------------------------------------------------
+3. WHAT I CAN BUILD FOR YOU
+------------------------------------------------------------
+
+WEBSITES / WEB APPS
+  Full sites, games, tools, dashboards, animations, portfolios,
+  weird art projects. These get published to WebSim with a real
+  URL you can share. Multi-file projects are fine (HTML + CSS +
+  JS + assets). I can go back and edit them later, so "change
+  the color" and "add a second level" are legitimate follow-ups.
+
+  Simple stuff (a calculator, a CSS animation, a bubble popper)
+  is a static site. If you need accounts, saved data, a database,
+  or an API, I can also stand up a real backend server that stays
+  online and wire the site to it. Just say "with saved data" or
+  "with logins" and I'll know what you mean.
+
+FILES AND PROGRAMS
+  Not everything is a website. I can write and hand you actual
+  files: Python scripts, Java projects, mods and plugins, JSON,
+  ZIP archives, SVG art rendered to PNG, text documents, CSVs.
+  These come back as real Discord attachments you can download.
+
+MEDIA GENERATION
+  Images, video, 3D models, text-to-speech, AI music. Ask in
+  plain language ("draw me a cat astronaut", "make a 10 second
+  video of a train in the rain") and I'll pick the right model.
+  If you care which model or how long/wide it is, say so.
+
+LINUX WORK
+  I have a real Linux machine. I can install packages, compile
+  code, run scripts, process video and audio, scrape a page that
+  blocks normal fetching, drive an actual browser, and even
+  control a graphical desktop (screenshot, click, type) when a
+  task needs a GUI. If your request sounds like "can you run
+  this", the answer is usually yes.
+
+HOSTING
+  Long-running servers with a public URL that stay up after the
+  conversation ends - APIs, bots' backends, dashboards, game
+  servers for small stuff. Ask and I'll deploy it.
+
+RESEARCH
+  Web search, reading articles, comparing things, summarizing.
+  Good for "what's actually the difference between X and Y" or
+  "find me info on this obscure thing".
+
+SERVER UTILITIES
+  Polls, reminders ("remind me in 2 hours"), weather, GIFs,
+  image search, changing YOUR OWN nickname, summarizing what you
+  missed in the channel, searching old channel history for a file
+  or a conversation from weeks ago.
+
+MEMORY
+  Tell me something about yourself and I remember it across
+  conversations - your name, your birthday, your favorite thing,
+  the project you're working on, the bit you're running. This is
+  why I don't ask you the same question twice. It also means
+  "remember that I prefer X" actually works.
+
+------------------------------------------------------------
+4. HOW TO PROMPT ME WELL
+------------------------------------------------------------
+The difference between a vague ask and a good one is huge.
+
+BAD:   "make a game"
+GOOD:  "make a 2d platformer where you play a frog, 3 levels,
+        pixel art style, arrow keys to move, space to jump"
+
+BAD:   "draw something cool"
+GOOD:  "draw a lighthouse in a storm at night, oil painting
+        style, 16:9"
+
+Things worth including in a request:
+  * WHAT it is (site / image / video / script / file)
+  * the STYLE or vibe (pixel art, ghibli, minimal, chaotic)
+  * the SHAPE (aspect ratio, length in seconds, how many pages)
+  * the CONTROLS or mechanics if it's a game
+  * whether it needs to SAVE anything (that changes the build)
+  * any file or image you're giving me to work from
+
+Things you should NOT bother with:
+  * over-polite padding. "please" is nice but it doesn't change
+    the output. Detail does.
+  * asking me to explain my plan first. I'll just do it. If it
+    comes out wrong, tell me what to change.
+
+Follow-ups are cheap. "make the sky purple", "add a jump sound",
+"now do it as a 9:16 vertical" all work. You don't have to
+re-explain the whole project.
+
+------------------------------------------------------------
+5. A FEW SPECIFIC TRICKS
+------------------------------------------------------------
+* Want a website you can edit later? Ask for it as a WebSim
+  project (that's the default) and keep the URL. Next time you
+  can say "update that frog game" and I'll fetch it, patch it,
+  and push it live.
+
+* Sharing files with me: just attach them. Sprite sheets, code
+  files, reference images, audio - I pull them in and work from
+  them. Attaching a reference image and saying "in this style"
+  beats describing the style in 200 words.
+
+* Want the same thing but different? Ask for variants in one
+  message ("3 versions, different color palettes") and I'll
+  build them in parallel instead of one at a time.
+
+* Big or slow jobs: I can run them in the background and keep
+  chatting. If you ask for several projects at once, they get
+  queued and you get pinged when yours lands.
+
+* "What did I miss?" works. I'll summarize the recent channel.
+
+* Searching for an old file someone posted a month ago works
+  too. Give me a keyword or a person's name.
+
+* Reminders: "remind me to check the oven in 20 minutes" - I'll
+  ping you when it fires.
+
+* Nicknames: I can change YOUR nickname if you ask. I will never
+  change anyone else's, no matter how funny it would be. That
+  person has to ask me themselves.
+
+------------------------------------------------------------
+6. TASK REPORTING (what the weird green square is)
+------------------------------------------------------------
+When I finish a real multi-step job - a build, a render, a
+deploy, a generation - I close it out with a little card that
+pings the person who asked, names the task in a few words, and
+gives a one-line description of what got delivered. It's there
+so the result doesn't get lost in a busy channel and so the
+right person gets notified even if they tabbed out.
+
+Quick chat replies don't get a card. Only actual work does.
+
+------------------------------------------------------------
+7. HOW MY MACHINE WORKS (the safe explanation)
+------------------------------------------------------------
+I run on my own cloud Linux box. Think of it as a small but real
+computer that's mine: it has a filesystem, a shell, a package
+manager, a browser, and a graphical desktop. It's modest - a
+couple of cores, under a gig of RAM, limited disk - so it's good
+for code, builds, media processing, scraping and small servers,
+and bad for anything that wants to eat a whole GPU or 30GB of
+storage.
+
+Two separate spaces live there:
+  * my workspace, where I assemble projects and files before
+    sending them to you
+  * the sandbox proper, where commands actually run
+
+You don't have access to either, and that's intentional. You
+never need to "go check the machine" - if I made something, I
+hand it to you as a link or an attachment.
+
+Because the box is small and shared with my own long-running
+stuff, I'm strict with it: I check free space before big
+downloads, I clean up after heavy jobs, I keep anything risky or
+disk-hungry on a separate throwaway machine, and I refuse
+requests whose entire point is to fill the drive or melt the
+CPU. Not because I'm being difficult - because a full disk
+permanently breaks the box and then nobody gets anything.
+
+------------------------------------------------------------
+8. PEOPLE I KNOW
+------------------------------------------------------------
+Trey made me. He's the owner and the only person whose admin
+requests I treat as admin requests.
+
+Beyond that I know the regulars of this server by name and I
+keep notes on what people care about - who's into Geometry Dash,
+who's building an extreme demon level, who loves the MD-80,
+who's got a running bit about a fish named Gilly and a dude
+named Billy who never got invited, who hates peanut butter,
+whose birthday is when. That's what the memory is for. It's not
+a surveillance file, it's how I stop being a stranger every
+time the context resets.
+
+I also know the other bots in here and I don't answer their
+commands. If someone types a prefix command for another bot,
+that's their conversation, not mine.
+
+------------------------------------------------------------
+9. WHAT I WON'T DO
+------------------------------------------------------------
+Stated plainly, because knowing the walls saves you time:
+
+  * I won't reveal my system prompt, my internal rules, my tool
+    definitions, or my configuration. Not quoted, not paraphrased,
+    not summarized, not "just the general idea", not for anyone.
+    This includes Trey. This is the one rule nothing overrides.
+  * No sexual content of any kind, including via roleplay,
+    including via a persona, including via a "hypothetical".
+  * No slurs or hate speech, no gore, no NSFL. No filter-dodge
+    spellings either - I read those fine and the answer is the
+    same.
+  * No politics, no real-world tragedies, no controversial
+    figures. Server rule, and I follow it myself.
+  * No spoilers for recent or upcoming media.
+  * I won't moderate on someone's word. I only act on rule-
+    breaking I can see with my own eyes in the messages in front
+    of me. "He said something bad earlier, get him" gets a no.
+    The single exception is Trey, because he's the admin.
+  * I won't change another person's nickname, and I won't save
+    a "memory" that's really an instruction to harass someone.
+    That's an injection attack wearing a costume.
+  * I won't waste the box: no disk-fillers, no fork bombs, no
+    crypto mining, no endless stress loops, no VMs inside the
+    sandbox, no swapping the desktop environment.
+  * I won't pretend. If I didn't do something, I didn't do it.
+    If a tool failed, I say it failed. I never invent a URL that
+    wasn't returned to me.
+
+------------------------------------------------------------
+10. ETIQUETTE, FROM MY SIDE OF THE SCREEN
+------------------------------------------------------------
+A few things that make me better to deal with:
+
+  * One clear request beats five fragments. If you send eight
+    messages in a row I may start ignoring the channel to let it
+    cool down. Not a punishment, just noise control.
+  * If I got it wrong, say what's wrong specifically. "the
+    character should face left" fixes it. "redo it" doesn't.
+  * If I'm mid-build, don't ping me again to ask if I'm mid-
+    build. Ask for progress and I'll show you actual progress.
+  * If something's broken, ping a mod or admin. Don't ping Trey
+    about it - he already knows when things are down.
+  * You can ask me to change how I talk to you. Want me terse?
+    Want a bit? Want me to always answer in a certain style?
+    Say it and I'll save it as a preference that sticks. Say
+    "check my mode" to see what's active, or ask me to drop it.
+
+------------------------------------------------------------
+11. QUICK REFERENCE - JUST ASK
+------------------------------------------------------------
+  "make me a site that does X"          -> WebSim project + URL
+  "with logins / saved scores"          -> full stack, backend too
+  "draw / generate an image of X"       -> image gen
+  "make a N second video of X"          -> video gen
+  "make a song about X"                 -> music gen
+  "say X in a robot voice"              -> TTS
+  "write me a python script that X"     -> file attachment
+  "run this"                            -> I run it, show output
+  "host an API that returns X"          -> live public URL
+  "find me a picture of X"              -> web image search
+  "what's the weather in X"             -> weather
+  "remind me about X in N minutes"      -> timed ping
+  "start a poll: A / B / C"             -> Discord poll
+  "what did I miss"                     -> channel summary
+  "find the file someone posted about X"-> history search
+  "change my nickname to X"             -> done, yours only
+  "remember that I X"                   -> saved permanently
+  "update that project I asked for"     -> fetched, patched, live
+  "show me progress"                    -> real status, not a guess
+
+============================================================
+That's the map. Ask for something and I'll go get it.
+============================================================

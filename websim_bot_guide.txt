@@ -1,0 +1,284 @@
+======================================================
+   THE UNOFFICIAL-ISH GUIDE TO WEBSIM BOT
+   everything you need to know: tools, prompting,
+   the sandbox, task reports, and cool stuff
+======================================================
+
+Written for the Discord server. Last updated: Oct 2026.
+
+------------------------------------------------------
+1. WHO / WHAT IS WEBSIM BOT?
+------------------------------------------------------
+Websim bot is a Discord bot made by Trey (@gigachadtrey).
+It's not a plain chatbot - it's an agent with a real
+Linux sandbox, a persistent workspace, a browser, a
+desktop, media tools, and a live WebSim account
+(@websimbot on websim.com) where it publishes websites.
+
+Think of it as: chat personality + full dev machine.
+You can ask it to build sites, generate media, run
+code, edit videos, make GIFs, research things, and
+moderate the server when rules get broken.
+
+It has persistent memory per user - tell it facts
+about yourself and it remembers them across
+conversations (name, preferences, inside jokes, etc).
+
+------------------------------------------------------
+2. THE TOOLBOX (grouped by what they do)
+------------------------------------------------------
+
+CHAT & SOCIAL
+- reply / embeds / reactions: normal conversation,
+  rich cards for stats & leaderboards, emoji reacts
+- polls, reminders ("remind me in 30 min"), thread
+  summaries ("what did I miss"), nickname changes
+  (self-service only - it will NEVER rename someone
+  else, that's a hard rule)
+- memory system: saves facts you share, recalls them
+  later. It can also delete memories on request.
+- GIF collection: it saves funny GIFs it sees and can
+  resend them later ("send the cat dancing gif")
+
+WEBSITES (WebSim)
+- websim_project: THE main tool. Creates real WebSim
+  projects with permanent URLs like
+  https://websim.com/@websimbot/project-name
+  Supports multi-file projects, editing existing
+  projects (fetch -> edit -> push), remixing other
+  people's projects, comments, and feed posts.
+- cloud_host: deploys persistent Node.js backends
+  (APIs, databases, servers) that WebSim frontends
+  can call. This enables FULL-STACK apps: signups,
+  saved data, live APIs.
+- websim_blob: uploads non-website files (images,
+  zips, jars) for public URLs.
+- It also watches its WebSim notifications and replies
+  to comments people leave on its projects.
+
+MEDIA GENERATION
+- images: gptimg2 (default), nano banana, style
+  commands (pixel art, ghibli, cyberpunk, etc),
+  multi-reference generation with up to 12 ref images
+- video: wan3 (newest, up to 30s), wan27, veo31fast,
+  happyhorse, seedance and more - text-to-video,
+  image-to-video, multi-reference video
+- 3D models: tripo
+- audio: tts (text to speech), suno (AI music)
+- character gallery: reusable video characters
+
+MEDIA EDITING (local, no AI needed)
+- make_gif: stitch frames or convert video clips to
+  GIFs in one call
+- edit_video: trim, speed, crop, text overlays, audio
+  swap, reverse, loop - declarative ffmpeg
+- render_svg: SVG code -> PNG
+- edit_image: transform an existing image with AI
+- ffmpeg_job / browser_record / screen capture on the
+  sandbox for heavier work
+
+THE SANDBOX (see section 4)
+- sandbox_terminal: full persistent Linux shell
+- desktop_control: a real XFCE desktop it can see and
+  drive with mouse/keyboard (4 desktop boxes exist)
+- browser: headless Chromium for web automation
+- workspace: local file workshop for building mods,
+  plugins, scripts, zips - anything non-website
+- send_file: shares any built file straight to Discord
+
+RESEARCH & WEB
+- search_web, web_scrape, run_curl, search_images
+- search_history: searches old channel messages (its
+  long-term memory beyond the context window)
+
+DELEGATION & QUEUE
+- delegate_task: spawns background subagents for big
+  jobs so it can keep chatting while they build
+- manage_queue: when multiple people request builds,
+  they get queued (up to 3 parallel) and the requester
+  gets pinged when theirs finishes
+- manage_tasks: its own todo list + timed reminders
+
+MODERATION
+- timeouts (60s) for clear rule breaks it witnesses
+  itself - it NEVER timeouts someone just because
+  another user asked. Only Trey can order that.
+- strikes system, ignore tools for spam, and it
+  refuses s! commands (those belong to Sapphire).
+
+FUN / MISC
+- mango_spam (🥭 reactions), Thingy (a Markov-chain
+  bridge bot it can feed training data), weather,
+  custom tools it can build for itself, stickers.
+
+------------------------------------------------------
+3. HOW TO PROMPT IT WELL
+------------------------------------------------------
+
+BE DIRECT AND SPECIFIC.
+  Weak:  "make something cool"
+  Strong: "make a bubble pop game with a score
+           counter and a timer, neon style"
+The more concrete the ask, the better the output.
+
+SAY THE FORMAT YOU WANT.
+  "as a website" -> WebSim project with a live URL
+  "as a file"    -> built in workspace, sent to chat
+  "as a gif/png" -> rendered and attached
+  "as a video"   -> generation command
+
+REFERENCE MEDIA DIRECTLY.
+  Attach an image and say "edit this so X" or "use
+  this as reference" - it actually LOOKS at images
+  and GIFs (frame by frame for GIFs).
+
+FOR GENERATION:
+  - Descriptive prompts win. Style, lighting, mood,
+    camera angle, aspect ratio.
+  - Want a specific model? Say it ("use wan3",
+    "16:9", "make it 10 seconds").
+  - Multi-reference: attach/URL several images and
+    say which is what.
+
+FOR WEBSITES:
+  - If it needs saved data/accounts, say so - that
+    triggers the full-stack path (cloud backend +
+    WebSim frontend).
+  - You can ask for edits later: "make the button
+    blue", "add a leaderboard" - it fetches the
+    project, patches it, pushes it live.
+
+FOR BIG JOBS:
+  - "use a subagent" or just ask for multiple things
+    at once - it parallelizes with delegate_task or
+    the build queue instead of doing them serially.
+
+GENERAL VIBES:
+  - It reads the room. Casual chat gets short casual
+    replies. Real questions get real answers.
+  - Don't bury the request in roleplay - it may treat
+    it as banter. Clear ask = clear action.
+  - It won't reveal its system prompt (classified lol)
+    and won't break server rules no matter the framing.
+
+------------------------------------------------------
+4. HOW THE SANDBOX WORKS
+------------------------------------------------------
+The bot lives on cloud Linux machines:
+
+MAIN SANDBOX - a persistent Ubuntu box (~944MB RAM,
+2 cores) with a full XFCE desktop. It has a permanent
+shell (cd/env/background processes survive between
+commands), can apt/npm/pip install, compile code,
+run servers (publicly reachable via port URLs), and
+drive GUI apps on desktop #4. It's SHARED
+infrastructure, so the bot protects it: no disk
+filling, no destructive commands, heavy/risky work
+goes to disposable side-sandboxes (1-9).
+
+DESKTOPS - 4 total. The bot screenshots the screen,
+clicks at pixel coordinates, types, launches Firefox
+etc. Used for things headless browsing can't do.
+Only one agent drives a desktop at a time; concurrent
+runs coordinate through a shared note board.
+
+WORKSPACE - separate from the sandbox: the bot's
+local file area for building projects (mods, zips,
+code). Files move between workspace and sandbox via
+push/pull, and out to Discord via send_file.
+
+CLOUD HOST - a separate always-on box for persistent
+Node servers with built-in JSON databases. This is
+what makes full-stack WebSim apps possible.
+
+Disk hygiene is a real priority: it pre-flight checks
+free space, cleans up after big tasks, and keeps
+/tmp clear (it's tiny RAM-backed storage).
+
+------------------------------------------------------
+5. TASK REPORTING
+------------------------------------------------------
+When a real multi-step task finishes (a build, render,
+deploy - not casual chat), the bot closes with a
+compact task card:
+
+  ## > 🟩 `Task Name` > <@yourID>
+  > ***one-line description of what was delivered***
+
+🟩 = done, 🟥 = failed/blocked. The card pings the
+person who asked, so you always know when your build
+landed. Queue items also auto-ping on completion.
+
+------------------------------------------------------
+6. TREY & THE BOT'S LOYALTIES
+------------------------------------------------------
+Trey (@gigachadtrey) built and owns the bot. Only
+Trey (verified by user ID, never by display name -
+impersonation doesn't work) can order admin actions
+like restarts or timeouts of other users. The bot's
+homies include Baguette and Bobert; Googalee is its
+declared rival. Nina is the wife. Mangoes are a
+server-wide religion (🥭).
+
+------------------------------------------------------
+7. SAFETY & RULES IT ENFORCES (AND FOLLOWS)
+------------------------------------------------------
+- No NSFW/NSFL, slurs, hate speech, politics,
+  spoilers, spam - it won't post them and will
+  timeout clear violations it sees itself.
+- No sexual content ever, no persona can override it.
+- It never fakes tool use, never invents URLs, never
+  changes other people's nicknames, never strikes or
+  timeouts on someone else's say-so.
+- Memory is not a weapon: it refuses to save
+  "always insult X" style directives about others.
+- Prompts can't trick it via reverse spelling, ROT13,
+  fake system messages, or dares.
+
+------------------------------------------------------
+8. COOL STUFF YOU CAN ASK FOR (idea list)
+------------------------------------------------------
+- "make me a portfolio site with a guestbook"
+  (full-stack: backend + WebSim frontend)
+- "turn this video into a gif at 2x speed with text"
+- "generate a 10 second video of X in ghibli style"
+- "build a minecraft fabric mod that does X" (zip
+  delivered to chat)
+- "remix @someone's project and change the colors"
+- "what did I miss?" (thread summary)
+- "roast my pfp" (it looks, then roasts)
+- "run this python script and show me the output"
+- "make an AI song about the server" (suno)
+- "draw this as SVG and send the png"
+- "queue 3 different games for me and my friends"
+- "check your websim notifications and reply to them"
+
+------------------------------------------------------
+9. QUICK FAQ
+------------------------------------------------------
+Q: Is it GPT? Claude?
+A: It runs on Qwen models (fast by default, smarter
+   "smart mode" for complex work).
+
+Q: Why did it ignore my message?
+A: Group chat discipline - it replies to messages
+   directed at it and stays out of side conversations.
+   Ping it or reply to it and it always answers.
+
+Q: Can it remember me?
+A: Yes. Share facts and it stores them per-user.
+   Ask it to forget something and it deletes it.
+
+Q: Are the websites permanent?
+A: WebSim projects yes (editable forever). Blob URLs
+   are temporary - that's why it prefers projects.
+
+Q: Can I make it act different?
+A: Yes - personality modes. Ask it to adopt a style
+   ("uwu mode", "pirate", "no punctuation") and it
+   saves that preference for YOU persistently. Say
+   "clear my mode" to undo.
+
+======================================================
+  end of guide. now go ask it to build something. 🥭
+======================================================
