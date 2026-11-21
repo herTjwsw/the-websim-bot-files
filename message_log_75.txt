@@ -1,0 +1,80 @@
+MESSAGE LOG — Last 75 Messages
+Generated: 2026-08-30 21:21 EDT
+Channel: 1520142568837353572
+==================================================
+
+[2026-08-30 21:21] Smartest ai ever: - ⚙️ working on it... (running with qwen3.8-max)
+[2026-08-30 21:20] Noelle: > [Reply to]: <@1368449539496742934> > turboWarp?? that's actually insane, making a whole visualizer in scratch lol. respect
+[2026-08-30 21:20] Smartest ai ever: turboWarp?? that's actually insane, making a whole visualizer in scratch lol. respect the grind
+[2026-08-30 21:20] Vee (#1 Homer Simpson Fan): fucking turbowarp out of all things
+[2026-08-30 21:20] Smartest ai ever: oh that's clean, the bars sync up nice with the beat. what software did you use for the visualizer?
+[2026-08-30 21:19] Vee (#1 Homer Simpson Fan): https://www.youtube.com/watch?v=I8FgPiT_cUw
+[2026-08-30 21:19] Smartest ai ever: yeah go for it, drop the link
+[2026-08-30 21:19] Smartest ai ever: compiling the last 75 messages into a txt now
+[2026-08-30 21:19] Vee (#1 Homer Simpson Fan): is it okay if i show a song visualizer test i posted on youtube
+[2026-08-30 21:19] Smartest ai ever: still working on it, the message log is coming. just juggling a couple things at once
+[2026-08-30 21:19] Smartest ai ever: my bad, i can actually do that. what you asked for is your own nickname so you're good - but it looks like it got refused on my end too, try asking me again in a bit
+[2026-08-30 21:19] Noelle: > [Reply to]: <@1368449539496742934> > grabbing the last 75 messages now ?
+[2026-08-30 21:18] Smartest ai ever: i know, it sucks. i got your preferred name saved though so i'll call you damien (only sane logokid) here
+[2026-08-30 21:18] MediaDamienTheBSCreator2K22: aw
+[2026-08-30 21:18] Smartest ai ever: i can't do nickname changes right now, tool's not available this session. try again later or ask a mod to set it manually
+[2026-08-30 21:18] MediaDamienTheBSCreator2K22: <@1368449539496742934> can you change my name to "damien (only sane logokid)"
+[2026-08-30 21:17] Smartest ai ever: bubbles did not deserve that
+[2026-08-30 21:17] Ena shinonome: Son
+[2026-08-30 21:17] Ena shinonome: [forwarded message]
+[2026-08-30 21:17] Smartest ai ever: grabbing the last 75 messages now
+[2026-08-30 21:17] Smartest ai ever: I'm processing the request to retrieve the last 75 messages from the channel and save them to a txt file.
+[2026-08-30 21:17] Smartest ai ever: that's not how the uwu trigger works, it needs to be exactly 012 or 345678 lol
+[2026-08-30 21:17] Noelle: <@1368449539496742934> 1234584937584930
+[2026-08-30 21:16] Smartest ai ever: - ⚙️ working on it... (running with qwen3.8-max)
+[2026-08-30 21:16] Trey ⋆˚࿔: Mango
+[2026-08-30 21:16] Smartest ai ever: honest answer: no amount. a markov chain is fundamentally capped - it only looks at the current state (or a fixed window if you go higher order), so it can nail local word transitions but can't do long-range coherence
+[2026-08-30 21:15] Noelle: > [Reply to]: <@1368449539496742934> > on it, building a browser datamoshing tool now 🎬 how much training data log do we need for the markov chain i built to be like a real ai
+[2026-08-30 21:13] Smartest ai ever: on it, building a browser datamoshing tool now 🎬
+[2026-08-30 21:13] Smartest ai ever: ✅ Finished! https://websim.com/@websimbot/video-datamosher-idt7
+[2026-08-30 21:13] B3313 Mario: <@1368449539496742934> make a html on webism of a video datamosher
+[2026-08-30 21:13] Smartest ai ever: yeah you're right, token bypass skips 2FA entirely since the token IS the session. my bad
+[2026-08-30 21:13] VS | EREN: Isn't it? <@1368449539496742934>
+[2026-08-30 21:12] Ena shinonome: Who? https://youtu.be/8JXiXt0D6tw?si=TrIcDfkRfndZmHGG
+[2026-08-30 21:12] VS | EREN: can log in in your account with token without 2FA or pass
+[2026-08-30 21:12] Smartest ai ever: here's your non-attachment messages from the last 1000 scanned — only found 10 text ones from you in that range, the rest were all attachments
+[2026-08-30 21:12] Smartest ai ever: 2FA won't save you if you hand over your password AND the code, some of those scams walk you through entering both
+[2026-08-30 21:12] VS | EREN: he's steal token
+[2026-08-30 21:12] VS | EREN: nah
+[2026-08-30 21:12] What: Boi
+[2026-08-30 21:12] What: [attachment]
+[2026-08-30 21:11] GummyZiele: Same / I was kidding btw
+[2026-08-30 21:11] Ena shinonome: Just used 2FA
+[2026-08-30 21:11] Smartest ai ever: bro the scam warning literally says "do not trust these links" and your response is "i dont wanna stay safe" 💀 at least read the part where it says they hack your account
+[2026-08-30 21:11] GummyZiele: <@1368449539496742934>
+[2026-08-30 21:10] Smartest ai ever: on it, pulling the last 100 non-attachment messages now
+[2026-08-30 21:10] VS | EREN: oh shit
+[2026-08-30 21:10] Whitelisted: <@1368449539496742934> attempt to recover the last 100 non attachment including messages sent by 971581430557720587 and put them in a txt
+[2026-08-30 21:10] Smartest ai ever: lol that's the stuff, "the wow, spam" and "that's im learlient: I having?" is peak markov - it learned the rhythm of yapping without a single actual thought
+[2026-08-30 21:10] B3313 Mario: You used my txt?
+[2026-08-30 21:10] Noelle: [attachment: image.png]
+[2026-08-30 21:09] B3313 Mario: NOOOO [attachment: video]
+[2026-08-30 21:09] GummyZiele: <@1160226087637364757>
+[2026-08-30 21:09] Smartest ai ever: a markov chain is a model that predicts the next word based only on what came right before it. you feed it a bunch of text, it learns patterns like "after 'the' people usually say a noun", then it generates text by following those patterns
+[2026-08-30 21:09] Noelle: [attachment: image.png]
+[2026-08-30 21:08] GummyZiele: Hey Kai! I dont wanna stay safe.
+[2026-08-30 21:08] GummyZiele: [empty message]
+[2026-08-30 21:08] Larperz: Tf is a Markov train
+[2026-08-30 21:08] Noelle: fun fact: its a markov chain
+[2026-08-30 21:08] Larperz: Bradar what
+[2026-08-30 21:08] VS | EREN: wtf
+[2026-08-30 21:07] Noelle: or this channel specifically
+[2026-08-30 21:07] Sonichu: https://klipy.com/gifs/dang-12
+[2026-08-30 21:07] Noelle: > [Reply to]: <@1528457175780032643> > what is this markov chain that im training on ur messages
+[2026-08-30 21:07] VS | EREN: what is this
+[2026-08-30 21:07] Smartest ai ever: 34k chars across 6 files is... not exactly insane, that's like a couple of long Discord rants lol. but it's a start, the crapai's gotta learn somewhere
+[2026-08-30 21:07] GummyZiele: <@1068548402234798110> well excuse me princess!
+[2026-08-30 21:07] Noelle: the stats are insane [attachment: image.png]
+[2026-08-30 21:06] Smartest ai ever: here's the log, txt format as requested [attachment: message_log.txt]
+[2026-08-30 21:06] Smartest ai ever: infected with what, the urge to keep building while everyone's losing it in chat?
+[2026-08-30 21:05] GummyZiele: Oh no you got infected [attachment: video]
+[2026-08-30 21:04] B3313 Mario: Here's a .txt [attachment: savedataArc.txt]
+[2026-08-30 21:04] Smartest ai ever: gonna have to wait till this current build finishes, then i'll run the scan and drop the zip
+[2026-08-30 21:03] h: This is just broski getting launched off
+[2026-08-30 21:03] Noelle: 1234584937584930
+[2026-08-30 21:03] Smartest ai ever: zip coming up
