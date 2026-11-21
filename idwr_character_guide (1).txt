@@ -1,0 +1,125 @@
+======================================================
+  IDWR DELTARUNE CHARACTER GUIDE (v5)
+  by Fred "I love 52" Garrettsona (randumb_87079)
+  guide compiled by websim bot
+======================================================
+
+WHAT ARE IDWR CHARACTERS?
+-------------------------
+IDWR characters are reusable video characters made by
+Fred for the WebSim bot's video commands (/wan3,
+/wan27). Every one has "IDWR" in the name - that's how
+you find them. You reference the character ID and the
+model uses Fred's official design. Consistent Kris in
+every clip, every time.
+
+THE MAIN THING ABOUT THEM: most IDWR characters pack
+MULTIPLE DESIGNS and PROPS into ONE reference image.
+The model sees the WHOLE image, so if you don't name
+which design/prop you want, it may mix them together.
+Always name the exact design and prop in your prompt -
+that's the single most important rule for using them.
+Full breakdown of every character's designs and props
+is below.
+
+
+THE FULL IDWR ROSTER (10 characters)
+------------------------------------
+Name              | Character ID              | Uses
+------------------|---------------------------|------
+Kris (IDWR)       | krisidwr-kzu4             | 101
+Susie (IDWR)      | bestsusieonthisserver     | 60
+Noelle (IDWR)     | noelle-idwr               | 50
+Lancer (IDWR)     | lancerfromdelyarone       | 28
+Ralsei (IDWR)     | sorryforlowqualityimage   | 26
+Sans (IDWR)       | sansidwr-i3y6             | 15
+Berdly (IDWR)     | berdlyidwr-7dh5           | 14
+C. Round (IDWR)   | yescroundyourwelcome      | 11
+W.D. Gaster (IDWR)| wdgasterid-53n6           | 1
+Spamton (IDWR)    | spamtonidw-4iq4           | 0
+
+
+DESIGNS & PROPS
+---------------
+KRIS (krisidwr-kzu4)
+  Designs: Light World, Dark World
+  Props:   Sword, Knife, SOUL, Birdcage, Shield
+  Note:    Don't give Kris eyes.
+
+SUSIE (bestsusieonthisserver)
+  Designs: Light World, Dark World
+  Props:   Ax, Chalk
+
+NOELLE (noelle-idwr)
+  Designs: Light World, Dark World
+  Props:   (none)
+
+RALSEI (sorryforlowqualityimage)
+  Designs: Regular, With Hat
+  Props:   (none)
+
+BERDLY (berdlyidwr-7dh5)
+  Designs: (single)
+  Props:   Halberd, Spear
+
+C. ROUND (yescroundyourwelcome)
+  Designs: C. Round, K. Round
+  Props:   (none)
+
+SPAMTON (spamtonidw-4iq4)
+  Designs: Normal, NEO
+  Props:   (none)
+
+Characters not listed here (Sans, Gaster, Lancer) have
+a single design and no props - they don't need any
+extra design/prop prompting, just use them.
+
+
+HOW TO PICK A DESIGN OR PROP
+----------------------------
+Name the exact label from the reference in your prompt:
+
+  "kris in the dark world design, holding the sword"
+  "susie light world design with the ax"
+  "spamton in his NEO form"
+  "ralsei with hat"
+  "berdly wielding the halberd"
+  "c. round as k. round"
+
+For props say "holding the [prop]", "wielding the
+[prop]", or "no props". If you don't specify, the model
+may mix designs together.
+
+
+HOW TO USE THEM IN VIDEOS
+-------------------------
+Commands: /wan3 (best, up to 30s) and /wan27 (up to 15s).
+
+METHOD 1 - character options (recommended)
+Put the exact ID in the character slots:
+
+  /wan3 kris and susie walk through the dark world,
+        susie in her Light World design
+        character1: krisidwr-kzu4
+        character2: bestsusieonthisserver
+
+wan3 supports character1 through character5, so you can
+put up to 5 IDWR characters in one clip.
+
+METHOD 2 - @mention in the prompt
+Write the ID with an @ in front and it's picked up:
+
+  /wan3 @krisidwr-kzu4 fights @spamtonidw-4iq4
+        in a neon-lit street
+
+
+TIPS
+----
+- Use the EXACT ID. "kris" alone won't work, it has to
+  be krisidwr-kzu4.
+- 2 characters is the sweet spot, more gets risky.
+- ALWAYS name the design if the character has multiple.
+- Name props explicitly, or say "no props".
+- Write what they're DOING, not what they look like -
+  the ref handles the design. Spend the prompt on
+  action, setting, camera.
